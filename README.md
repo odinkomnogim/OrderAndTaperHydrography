@@ -37,6 +37,9 @@ To install this plugin you have to download 'order_and_taper_hydrography.zip', t
 ## Usage
 To determine stream orders and visualize hydrography in a tapered way, you have to select (highlight) the main river, and then run this plugin.
 
+## Notes
+Hydrographic line measurement will be added to the plugin soon. That will help to automatically determine lengths by radius and angle between vertices, and not simply as the sum of the segments’ lengths.
+
 
 
 
