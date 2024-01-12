@@ -1,7 +1,7 @@
 # OrderAndTaperHydrography
 This is a QGIS plugin that helps to determine stream orders and visualize hydrography, taking flow direction into consideration (i.e. in a tapered way). 
 
-
+![example](https://github.com/odinkomnogim/OrderAndTaperHydrography/blob/main/example_screenshots.png?raw=true)
 
 Tapered hydrography mapping, in this case, involves changing the geometry of linear features. 
 Every segment of a line (distance between two neighboring vertices) is bufferd, taking into account stream’s order, length and flow direction, using this equation: 
@@ -22,7 +22,7 @@ However, there are streams whose source is located at the confluence of the othe
 When the tributary is larger, a rule is set: all segments lying in the first 40% of the total count (regardless of the N/C parameter) are displayed with a buffer of the same width calculated as:
 
 <p align="center">
-  <img src="https://latex.codecogs.com/svg.image?B2=0,4\cdotk\cdot\frac{1}{Or&plus;1}\cdot\textrm{lg}L">
+  <img src="https://latex.codecogs.com/svg.image?B2=0.4\cdot&space;k\cdot\frac{1}{Or&plus;1}\cdot\textrm{lg}L\cdot\frac{N}{C}">
 </p>
 
 where B2 is the width of the buffer set for the upper courses of larger rivers.
