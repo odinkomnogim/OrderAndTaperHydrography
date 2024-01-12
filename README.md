@@ -1,4 +1,4 @@
-# OrderAndTaperHydrography
+# Order and Taper Hydrography
 This is a QGIS plugin that helps to determine stream orders and visualize hydrography, taking flow direction into consideration (i.e. in a tapered way). 
 
 ![example](https://github.com/odinkomnogim/OrderAndTaperHydrography/blob/main/example_screenshots.png?raw=true)
