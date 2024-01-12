@@ -29,6 +29,7 @@ where B2 is the width of the buffer set for the upper courses of larger rivers.
 
 This approach makes it possible not only to solve the problem of visualizing rivers whose source is located at the confluence of two tributaries, but also to highlight a more important riverbed out of two in cases where the merging scheme is standard.
 
+That is one of possibilities to quickly visualize hydrographic networks, taking into account the hierarchy of tributaries and the direction of their flow. The developed algorithm for mapping river systems can significantly reduce the time spent on preparing the hydrography layer: instead of manually processing or symbolizing each river. This approach can be recommended for small-scale mapping to visualize hydrography layer for thematic or general-purpose maps.
 
 ## Installation 
 To install this plugin you have to download 'order_and_taper_hydrography.zip', then in QGIS go to Plugins -> Manage and Install Plugins -> Install from ZIP.
