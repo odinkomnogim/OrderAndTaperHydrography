@@ -10,12 +10,12 @@ Every segment of a line (distance between two neighboring vertices) is bufferd, 
   <img src="https://latex.codecogs.com/svg.image?B1=k\cdot\frac{1}{Or&plus;1}\cdot\textrm{lg}L\cdot\frac{N}{C}">
 </p>
 
-where B1 is the width of the buffer for a specific line segment; 
-k is a custom (scale) coefficient; 
-Or is the stream order; 
-L is the river’s length; 
-N is the ordinal number of a specific segment; 
-C is the total number of the river segments.
+where *B1* is the width of the buffer for a specific line segment; 
+*k* is a custom (scale) coefficient; 
+*Or* is the stream order; 
+*L* is the river’s length; 
+*N* is the ordinal number of a specific segment; 
+*C* is the total number of the river segments.
 
 However, there are streams whose source is located at the confluence of the other two. In such cases, the algorithm would still start displaying the river from the minimum value, which would violate the smoothness and integrity of the network visualization. In order to avoid such incorrect mapping, previous equation is applied only to some of the more remote tributaries whose order value does not exceed 80% of the maximum order. For example, if the network is represented by the main river and tributaries up to the 6th order, then the algorithm is applied only for 5 and 6.
 
@@ -25,7 +25,7 @@ When the tributary is larger, a rule is set: all segments lying in the first 40%
   <img src="https://latex.codecogs.com/svg.image?B2=0.4\cdot&space;k\cdot\frac{1}{Or&plus;1}\cdot\textrm{lg}L\cdot\frac{N}{C}">
 </p>
 
-where B2 is the width of the buffer set for the upper courses of larger rivers.
+where *B2* is the width of the buffer set for the upper courses of larger rivers.
 
 This approach makes it possible not only to solve the problem of visualizing rivers whose source is located at the confluence of two tributaries, but also to highlight a more important riverbed out of two in cases where the merging scheme is standard.
 
